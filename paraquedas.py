@@ -45,29 +45,3 @@ for j in range(0, len(alturas)):
 
         if i == len(alturas[j])-1:
             print "O paraquedas nao abriu"
-
-'''
-for i in range(0, len(alturas[0])):
-
-    diff = float(alturas[0][i]) - float(alturas[0][i-1])
-    if i != 0 and diff < 0:
-        flag += 1
-        print float(alturas[0][i])
-        print float(alturas[0][i-1])
-        print flag
-
-        #Verifica se o foguete esta de fato caindo
-        for j in range(0, 5):
-
-            if float(alturas[0][i+j+1]) - float(alturas[0][i+j]) < 0:
-                flag += 1
-
-            elif flag > 3:
-                #line for open the parachutes
-                print "Abrir Paraquedas"
-                break
-
-            elif j == 4 and flag <= 3:
-                flag = 0
-                break
-'''
